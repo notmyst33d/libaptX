@@ -2,7 +2,13 @@
 Open source replacement for proprietary Qualcomm aptX libraries on Android
 
 ## Building with Android
-Soon...
+1. `git clone https://github.com/notmyst33d/libaptX external/aptx`
+2. Add following to your `device.mk`:
+```
+PRODUCT_PACKAGES += \
+    libaptX_encoder \
+    libaptXHD_encoder
+```
 
 ## Building with NDK
 You should have Android NDK installed on your system
