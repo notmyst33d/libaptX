@@ -1,5 +1,6 @@
 cc_library {
     name: "libaptX_encoder",
+    cflags: ["-O3", "-Wno-error"],
     local_include_dirs: ["include"],
     srcs: [
         "libaptX_encoder/encode.c",
@@ -14,6 +15,7 @@ cc_library {
 
 cc_library {
     name: "libaptXHD_encoder",
+    cflags: ["-O3", "-Wno-error"],
     local_include_dirs: ["include"],
     srcs: [
         "libaptXHD_encoder/encode.c",
